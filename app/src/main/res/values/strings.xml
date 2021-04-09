@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">VideoProVjp2021</string>
+    <string name="main_title">Video To Photo</string>
+    <string name="text_share">Share</string>
+    <string name="text_about">About</string>
+    <string name="text_rate">Rate us</string>
+    <string name="text_select">Select Video</string>
+    <string name="text_my_capture">My Capture</string>
+    <string name="text_setting">Settings</string>
+    <string name="text_folder">Slideshow</string>
+    <string name="title_select_folder">Select Folder</string>
+    <string name="title_select_video">Select Video</string>
+    <string name="title_capture">Capture Video</string>
+    <string name="text_done">Done</string>
+    <string name="text_choose_image">Choose Image</string>
+    <string name="text_choose_audio">Choose Audio</string>
+    <string name="text_make_video">Make Video</string>
+    <string name="image_format">Image Format</string>
+    <string name="image_format_dialog_title">Choose Format</string>
+    <string name="image_format_default_value">JPG</string>
+    <string-array name="image_format_entries">
+        <item>JPG</item>
+        <item>PNG</item>
+    </string-array>
+    <string-array name="image_format_value">
+        <item>JPG</item>
+        <item>PNG</item>
+    </string-array>
+    <string name="image_quality">Image Quality</string>
+    <string name="image_quality_dialog_title">Choose Quality</string>
+    <string name="image_quality_default_value">High</string>
+    <string-array name="image_quality_entries">
+        <item>Medium</item>
+        <item>High</item>
+        <item>Best</item>
+    </string-array>
+    <string-array name="image_quality_value">
+        <item>Medium</item>
+        <item>High</item>
+        <item>Best</item>
+    </string-array>
+</resources>

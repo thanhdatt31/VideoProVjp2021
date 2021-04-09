@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main_activity"
+    tools:ignore="ContentDescription">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EF3F2D"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:title="@string/main_title"
+            app:titleTextColor="@color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageButton
+        android:id="@+id/btn_select"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_round_select"
+        android:padding="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_movie_filter_white_24dp__1_"
+        app:layout_constraintBottom_toTopOf="@id/btn_setting"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_capture"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_select"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/btn_select"
+        app:layout_constraintRight_toRightOf="@id/btn_select"
+        app:layout_constraintTop_toBottomOf="@id/btn_select" />
+
+    <ImageButton
+        android:id="@+id/btn_capture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_round_mycapture"
+        android:padding="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_photo_library_white_24dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_select"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_select" />
+
+    <TextView
+        android:id="@+id/tv_mycapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_my_capture"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/btn_capture"
+        app:layout_constraintRight_toRightOf="@id/btn_capture"
+        app:layout_constraintTop_toBottomOf="@id/btn_capture" />
+
+    <ImageButton
+        android:id="@+id/btn_setting"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_round_setting"
+        android:padding="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_video_settings_white_24dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_rate"
+        app:layout_constraintLeft_toLeftOf="@id/btn_select"
+        app:layout_constraintRight_toRightOf="@id/btn_select"
+        app:layout_constraintTop_toBottomOf="@id/btn_select" />
+
+    <TextView
+        android:id="@+id/tv_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_setting"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/btn_setting"
+        app:layout_constraintRight_toRightOf="@id/btn_setting"
+        app:layout_constraintTop_toBottomOf="@id/btn_setting" />
+
+    <ImageButton
+        android:id="@+id/btn_slide_show"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_round_folder"
+        android:padding="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_folder_special_white_24dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_share"
+        app:layout_constraintLeft_toLeftOf="@id/btn_capture"
+        app:layout_constraintRight_toRightOf="@id/btn_capture"
+        app:layout_constraintTop_toBottomOf="@id/btn_capture" />
+
+    <TextView
+        android:id="@+id/tv_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_rate"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/btn_rate"
+        app:layout_constraintRight_toRightOf="@id/btn_rate"
+        app:layout_constraintTop_toBottomOf="@id/btn_rate" />
+
+    <ImageButton
+        android:id="@+id/btn_rate"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_round_rate"
+        android:padding="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_star_rate_white_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/btn_setting"
+        app:layout_constraintRight_toRightOf="@id/btn_setting"
+        app:layout_constraintTop_toBottomOf="@id/btn_setting" />
+
+    <TextView
+        android:id="@+id/tv_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_folder"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/btn_slide_show"
+        app:layout_constraintRight_toRightOf="@id/btn_slide_show"
+        app:layout_constraintTop_toBottomOf="@id/btn_slide_show" />
+
+    <ImageButton
+        android:id="@+id/btn_share"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_round_share"
+        android:padding="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_share_white_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/btn_slide_show"
+        app:layout_constraintRight_toRightOf="@id/btn_slide_show"
+        app:layout_constraintTop_toBottomOf="@id/btn_slide_show" />
+
+    <TextView
+        android:id="@+id/tv_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_share"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/btn_share"
+        app:layout_constraintRight_toRightOf="@id/btn_share"
+        app:layout_constraintTop_toBottomOf="@id/btn_share" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
